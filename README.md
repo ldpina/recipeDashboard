@@ -35,7 +35,7 @@ Here's a walkthrough of implemented user stories:
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with screenToGif!
 
-[proj6]()
+[proj6](https://github.com/ldpina/recipeDashboard/blob/main/proj6.gif)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
