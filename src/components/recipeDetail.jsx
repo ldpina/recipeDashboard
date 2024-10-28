@@ -6,7 +6,6 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  CartesianGrid,
   Legend,
   ResponsiveContainer
 } from 'recharts';
@@ -43,7 +42,6 @@ const RecipeDetails = () => {
 
   if (!recipeDetails || !nutritionData) return <p>Loading...</p>;
 
-  // Prepare data for the chart
   const nutrientData = [
     {
       name: 'Protein',
@@ -80,16 +78,15 @@ const RecipeDetails = () => {
       <p dangerouslySetInnerHTML={{ __html: recipeDetails.summary }} />
       
       {/* Display Nutrition Bar Chart */}
-      <div>
+      <div className='chartContainer'>
         <h3>Nutritional Information Bar Chart</h3>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={nutrientData}>
-            {/* <CartesianGrid strokeDasharray="10" /> */}
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
-            <Legend />
-            <Bar dataKey="amount" fill="#82ca9d" />
+            <Legend/>
+            <Bar dataKey="amount" fill="orange" />
           </BarChart>
         </ResponsiveContainer>
       </div>
